@@ -22,6 +22,7 @@ const jsLoaders = () => {
 
 const isProd = process.env.NODE_ENV === 'production'
 const isDev = !isProd
+
 const filename = ext => isDev ? `bundle.${ext}` : `bundle.[hash].${ext}`
 
 module.exports = {
@@ -66,7 +67,7 @@ module.exports = {
       filename: filename('css')
     })
   ],
-  module:{
+  module: {
     rules: [
       {
         test: /\.s[ac]ss$/i,
@@ -79,8 +80,8 @@ module.exports = {
             }
           },
           'css-loader',
-          'sass-loader'
-        ]
+          'sass-loader',
+        ],
       },
       {
         test: /\.js$/,
@@ -90,3 +91,4 @@ module.exports = {
     ]
   }
 }
+

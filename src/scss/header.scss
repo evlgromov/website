@@ -1,18 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 @import "variables";
 
-.page {
-  font-family: 'Roboto', sans-serif;
-  font-size: 12px;
-  background: #F1F3F6;
-  &__header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: $color-secondary;
-    padding: 0 20px;
-    box-shadow: 0 0 20px 0 rgba(0,0,0,.08);
-  }
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: $color-secondary;
+  padding: 0 20px;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,.08);
   &__logo {
     &-image {
       height: 45px;
@@ -52,76 +46,5 @@
         transition: background-color .25s;
       }
     }
-  }
-  &__main {
-    background: $color-secondary;
-    height: calc(100vh - 55px);
-  }
-}
-
-.link {
-  color: $color-primary;
-  text-decoration: none;
-  outline: none;
-}
-
-.footer {
-  &__main {
-    padding: 50px 20px 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  &__list {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-  }
-  &__links {
-    display: flex;
-    flex-direction: column;
-    padding-right: 30px;
-  }
-  &__links-header {
-    font-weight: 500;
-    color: $color-primary;
-    padding-bottom: 20px;
-    text-decoration: underline;
-  }
-  &__link {
-    padding-bottom: 10px;
-  }
-  &__copy {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: $color-primary;
-    padding: 20px;
-  }
-  &__text {
-    color: $color-primary;
-    font-size: 10px;
-  }
-  &__subscribe {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-  &__input {
-    padding: 10px;
-    border: 0px;
-    background: $color-secondary;
-    border-radius: 20px 0px 0px 20px;
-    outline: none;
-  }
-  &__button {
-    outline: none;
-    padding: 10px;
-    border: 0px;
-    background: $color-primary;
-    color: $color-secondary;
-    border-radius: 0px 20px 20px 0px;
-    padding-right: 15px;
-    cursor: pointer;
   }
 }

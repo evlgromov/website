@@ -1,1 +1,12 @@
-import './scss/index.scss'
+import {App} from '@/components/app/App';
+import {Header} from '@/components/header/Header';
+import {Main} from '@/components/main/Main';
+import {Footer} from '@/components/footer/Footer';
+import './scss/index.scss';
+
+
+const app = new App('#app', {
+  components: [Header, Main, Footer]
+})
+
+app.render()
