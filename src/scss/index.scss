@@ -1,6 +1,8 @@
-@import "~normalize.css";
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import "navbar";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import "variables";
+@import "header";
+@import "main";
+@import "footer";
 
 * {
   margin: 0;
@@ -8,8 +10,24 @@
   box-sizing: border-box;
 }
 
-body {
+.page {
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
-  background: #F1F3F6;
+  background: #234324;
+  &__header {
+
+  }
+  &__main {
+    background: $color-secondary;
+    height: calc(100vh - 55px);
+  }
+  &__footer {
+
+  }
+}
+
+.link {
+  color: $color-primary;
+  text-decoration: none;
+  outline: none;
 }
